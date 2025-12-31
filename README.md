@@ -8,6 +8,9 @@ This repository uses Modulus to study the conjugate heat transfer between the he
 
 3- How to use the Multi-Phase training approach for one way coupled problems.
 
+The figure below presents a comparison of battery cold-plate heat transfer simulations performed using the AI-based approach and ANSYS Fluent. The results demonstrate high accuracy. 
+
+![AI-ANSYS](https://github.com/user-attachments/assets/a7b77aba-8c71-4c86-9501-8f61436c83e6)
 
 NVIDIA PhysicsNeMo is an open-source deep-learning framework for building, training,
 fine-tuning, and inferring Physics AI models using state-of-the-art SciML methods for
