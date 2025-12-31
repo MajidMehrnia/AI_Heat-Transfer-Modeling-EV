@@ -1,6 +1,6 @@
 ## Description
 
-This tutorial uses Modulus to study the conjugate heat transfer between the heat sink and the surrounding fluid. The temperature variations inside solid and fluid would be solved in a coupled manner with appropriate interface boundary conditions. In this tutorial, you will learn:
+This repository uses Modulus to study the conjugate heat transfer between the heat sink and the surrounding fluid. The temperature variations inside solid and fluid would be solved in a coupled manner with appropriate interface boundary conditions. In this tutorial, you will learn:
 
 1- How to generate a 3D geometry using the geometry module in AI-driven.
 
@@ -21,13 +21,6 @@ Whether you are exploring the use of neural operators, GNNs, or transformers, or
 interested in Physics-Informed Neural Networks or a hybrid approach in between, PhysicsNeMo
 provides you with an optimized stack that will enable you to train your models at scale.
 
-<!-- markdownlint-disable -->
-<p align="center">
-  <img src=https://raw.githubusercontent.com/NVIDIA/physicsnemo/main/docs/img/value_prop/Knowledge_guided_models.gif alt="PhysicsNeMo"/>
-</p>
-<!-- markdownlint-enable -->
-
-<!-- toc -->
 
 - [More About PhysicsNeMo](#more-about-physicsnemo)
   - [Scalable GPU-Optimized Training Library](#scalable-gpu-optimized-training-library)
