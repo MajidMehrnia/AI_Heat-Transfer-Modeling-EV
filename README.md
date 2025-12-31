@@ -12,7 +12,7 @@ The figure below presents a comparison of battery cold-plate heat transfer simul
 
 ![AI-ANSYS](https://github.com/user-attachments/assets/a7b77aba-8c71-4c86-9501-8f61436c83e6)
 
-NVIDIA PhysicsNeMo is an open-source deep-learning framework for building, training,
+The NVIDIA open-source Physics-ML framework is employed in this work. NVIDIA PhysicsNeMo is an open-source deep-learning framework for building, training,
 fine-tuning, and inferring Physics AI models using state-of-the-art SciML methods for
 AI4Science and engineering.
 
