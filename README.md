@@ -13,7 +13,7 @@ The figure below illustrates the geometry of the TXV.
 
 The figure below compares the AI/ML predictions with reference CFD results for validation. The TXV model and the Physics-Informed AI/ML predictions were validated against reference CFD simulations. 
 
-![T](https://github.com/user-attachments/assets/fc61ba71-062c-471a-ad14-0d883693f221)
+
 
 The models show strong agreement on key thermal predictions, as both the CFD and the AI/ML model accurately capture the same outlet and minimum temperatures. While the visualization of vortex dynamics differs, the models are not contradictory. The primary distinction lies in how they represent the flow: the CFD shows complex, unsteady vortex shedding, while the AI model depicts a simplified, stable vortex, effectively showing a time-averaged result. 
 
