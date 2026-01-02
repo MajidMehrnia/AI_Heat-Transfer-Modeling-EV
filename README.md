@@ -1,24 +1,48 @@
 ## Description
 
-This repository uses AI Modulus to simulate the heat transfer. The temperature variations inside solid and fluid would be solved in a coupled manner with appropriate interface boundary conditions. In this repository, it is discussed:
+This repository demonstrates a Physics-Informed AI/ML framework for thermodynamic simulation and optimization, applied to an electric vehicle thermal management system. The framework integrates physics-based modeling with neural networks to accelerate simulations while maintaining engineering fidelity.
 
-1- How to generate a 3D geometry using the geometry module in AI-driven.
+As a test case, a Thermostatic Expansion Valve (TXV) is modeled to study heat transfer and fluid dynamics within the refrigeration cycle. Neural networks are trained to predict temperature fields in the fluid domain, enabling rapid evaluation of TXV performance under different operating conditions. Validation datasets are incorporated to ensure accuracy and reliability of the predictions.
 
-2- How to set up a heat transfer problem using the interface boundary conditions.
+## Benefits of the Approach
 
-3- How to use the Multi-Phase training approach for one way coupled problems.
+- Reduced Simulation Time: Physics-informed ML drastically reduces computational cost compared to full CFD.
 
-The figure below presents a comparison of battery cold-plate heat transfer simulations performed using the AI-based approach and ANSYS Fluent. The results demonstrate high accuracy. 
+- High Accuracy: Incorporates physical laws and validation datasets to maintain reliability.
 
-![AI-ANSYS](https://github.com/user-attachments/assets/a7b77aba-8c71-4c86-9501-8f61436c83e6)
+- Scalable: The trained models can be applied to different operating conditions and integrated into larger EV thermal management studies.
 
-The NVIDIA open-source Physics-ML framework is employed in this work. NVIDIA PhysicsNeMo is an open-source deep-learning framework for building, training,
-fine-tuning, and inferring Physics AI models using state-of-the-art SciML methods for
-AI4Science and engineering.
+- Decision Support: Enables OEM-level design and optimization of heat pump.
 
-PhysicsNeMo provides Python modules to compose scalable and optimized training and
-inference pipelines to explore, develop, validate, and deploy AI models that combine
-physics knowledge with data, enabling real-time predictions.
+## Test Case: Thermostatic Expansion Valve (TXV)
+
+- The TXV regulates refrigerant flow in the heat pump cycle of an electric vehicle. Accurate modeling is critical for evaluating the system’s thermal performance. In this project:
+
+- The TXV geometry and flow domain are defined based on standard automotive designs.
+
+- Physics-informed neural networks are trained to predict temperatures and enthalpy in the fluid domain.
+
+- Validation datasets are generated to compare AI/ML predictions against conventional simulation results.
+
+This approach allows high-fidelity simulation of the TXV without requiring full computational fluid dynamics (CFD) runs for every operating point.
+
+## Simulation Workflow
+
+1- Geometry Setup: The TXV and surrounding fluid domain are defined.
+
+2- Physics-Based Modeling: Governing equations for mass, momentum, and energy are implemented to capture thermodynamic behavior.
+
+3- Neural Network Training: AI/ML models are trained on simulated or experimental data to predict fluid temperature fields.
+
+4- Validation: AI/ML predictions are validated against reference CFD or analytical results.
+
+5- Integration: Trained models can be integrated with larger EV thermal management simulations to assess heat pump cycle performance efficiently.
+
+
+
+The NVIDIA open-source Physics-ML framework is employed in this work. NVIDIA PhysicsNeMo is an open-source deep-learning framework for building, training, fine-tuning, and inferring Physics AI models using state-of-the-art SciML methods for AI4Science and engineering.
+
+PhysicsNeMo provides Python modules to compose scalable and optimized training and inference pipelines to explore, develop, validate, and deploy AI models that combine physics knowledge with data, enabling real-time predictions.
 
 Whether you are exploring the use of neural operators, GNNs, or transformers, or are
 interested in Physics-Informed Neural Networks or a hybrid approach in between, PhysicsNeMo
