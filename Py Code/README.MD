@@ -1,4 +1,5 @@
 1. Geometry Definition
+
 This first block of code defines the geometry of the coil. It uses the sympy library to create 2D shapes for the fluid and solid domains and then extrudes them into 3D.
 
 GEOMETRY_PARAMS: A dictionary holding all the key dimensions of the coil structure.
